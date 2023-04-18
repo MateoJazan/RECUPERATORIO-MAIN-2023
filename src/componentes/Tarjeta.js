@@ -1,4 +1,7 @@
+import { Item } from "./Item";
+
 const listadoPlataformas = ["Twitter", "Facebook", "Youtube"];
+
 
 // CONSIGNAS EN TARJETA:
 // 1- Importar Item
@@ -11,10 +14,16 @@ const listadoPlataformas = ["Twitter", "Facebook", "Youtube"];
 // MÉTODOS: Listado no requiere de métodos.
 // PROPS: Listado recibe el método heredado de App y se lo pasa a cada Item.
 
-export default function Tarjeta(props) {
+export const Tarjeta = (props) => {
   return (
+    <>
     <ul>
-      {/* 🚩 Implementar acá */}
+      {/* 🚩 Implementar acá */
+      listadoPlataformas.map((plataforma) =>{
+        return <Item key={plataforma+"_item"} plataforma={plataforma} metodoFavorita={props.metodoFavorita}/>
+      })
+      }      
     </ul>
+    </>
   );
 }

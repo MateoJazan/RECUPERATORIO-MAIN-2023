@@ -7,11 +7,11 @@
 // MÉTODOS: Item no requiere de métodos.
 // PROPS: Item recibe como props el método para modificar la plataforma favorita y su respectivo nombre como contenido.
 
-export default function Item(props) {
-    return (
-      <>
-          // 🚩
-      </>
+export const Item = (props) => {
+    return (         
+          <li  onClick={() =>{props.metodoFavorita(props.plataforma)}}>
+            {props.plataforma}
+          </li>
     );
   }
   
