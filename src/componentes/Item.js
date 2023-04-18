@@ -9,7 +9,7 @@
 
 export const Item = (props) => {
     return (         
-          <li  onClick={() =>{props.metodoFavorita(props.plataforma)}}>
+          <li onClick={() =>{props.metodoFavorita(props.plataforma)}}>
             {props.plataforma}
           </li>
     );

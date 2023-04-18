@@ -30,7 +30,7 @@ function App() {
       <h2>Contanos, ¿cuál es tu plataforma favorita?</h2>
       { favorita !== "" ? (<h4 className={ favorita === "Twitter" ? "tw" : favorita === "Facebook" ? "fb" : "yt" }> {favorita}</h4>) : ("")}
 
-      {/* 🚩 Implementar acá */      }
+      {/* 🚩 Implementar acá */}
         <Tarjeta metodoFavorita = {handleFavorita}/>  
             
 
